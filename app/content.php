@@ -11,7 +11,7 @@ if (mb_strlen($term) >= 3) {
 
     $term = trim($term);
 
-    $term = str_replace(' ', '+', $term);
+    $term = str_replace(' ', '-', $term);
     $term = '+' . $term;
 
     $fullTextSearchSql = "SELECT * FROM addresses1
